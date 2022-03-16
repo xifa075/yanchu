@@ -1,0 +1,46 @@
+{
+  "desc": "关注微信公众号：砚初与猫",
+  "height": "78",
+  "data": [{
+    "name": "设置问题",
+    "item": [{
+        "question": "▶ Scriptable如何显示行号？",
+        "answer": "点击scriptable左上角齿轮 —> Editor —> show line numbers。",
+        "height": "80"
+      },
+      {
+        "question": "▶ 头像没有显示/没有更新",
+        "answer": "1、京东APP上传头像；2、[重置设置][重置缓存]；3、运行脚本。",
+        "height": "80"
+      },
+      {
+        "question": "▶ 头像下方PLUS标志显示不正常",
+        "answer": "[重置设置][重置缓存]后重新运行脚本。",
+        "height": "66"
+      },
+      {
+        "question": "▶ 参数设置如何保留？",
+        "answer": "参数设置绑定脚本文件名，只要文件名未变，参数将一直作用于该文件。请勿随意更改脚本文件名，更改文件名后，之前设置的所有参数将重置。",
+        "height": "94"
+      }
+    ]
+  }, {
+    "name": "数据问题",
+    "item": [{
+        "question": "▶ 为什么京豆总数、京享值都变成0了？",
+        "answer": "若出现京豆总数、京享值为0，未知用户，执行以下操作：“文件”app —> iCloud 云盘 —> scriptable，删除里面的Yan-JD文件夹。tips：请勿使用多设备在该组件里使用同一cookie。",
+        "height": "108"
+      },
+      {
+        "question": "▶ 提示“请登录您的京东账户/no login”",
+        "answer": "如果出现此类提示，你的cookie过期了，重新抓cookie。cookie恢复后如果还出现此类提示，请重置缓存，或者将缓存时间临时改为0后运行脚本即可。",
+        "height": "94"
+      },
+      {
+        "question": "",
+        "answer": "",
+        "height": "66"
+      }
+    ]
+  }]
+}
