@@ -1,7 +1,7 @@
 /*
 腾讯自选股APP & 微信微证券公众号
 
-只适配了IOS，测试了青龙和V2P，其他平台请自行测试，安卓请自行测试
+只适配IOS，测试了青龙和V2P，其他平台请自行测试，安卓请自行测试
 多用户用#隔开
 
 脚本只会在10点到13点之间进行猜涨跌，请务必在这段时间内跑一次脚本
@@ -26,24 +26,6 @@ APP捉包把整个URL放进去TxStockAppUrl，header转成JSON字符串之后放
 export TxStockAppUrl='https://wzq.ten....#https://wzq.ten....#https://wzq.ten....'
 export TxStockAppHeader='{"Host":"...","Accept":"...",...}#{"Host":"...","Accept":"...",...}#{"Host":"...","Accept":"...",...}'
 export TxStockWxHeader='{"Host":"...","Accept":"...",...}#{"Host":"...","Accept":"...",...}#{"Host":"...","Accept":"...",...}'
-
-重写食用
-TxStockAppUrl与TxStockAppHeader：打开APP，点击头像->右上角金币->获取金币
-TxStockWxHeader：打开 腾讯自选股微信版|微证券 公众号，右下角好福利->福利中心
-
-V2P：
-重写: https://wzq.tenpay.com/cgi-bin/activity_task_daily.fcgi?   https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js
-MITM: wzq.tenpay.com
-
-圈X：
-[task_local]
-#腾讯自选股
-35 11,16 * * * https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js, tag=腾讯自选股, enabled=true
-[rewrite_local]
-#获取APP和微信微证券的URL和header
-https://wzq.tenpay.com/cgi-bin/activity_task_daily.fcgi? url script-request-header https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js
-[MITM]
-hostname = wzq.tenpay.com
 
 */
 
