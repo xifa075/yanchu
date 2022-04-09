@@ -1,6 +1,6 @@
 /*
-腾讯自选股V2
-
+腾讯自选股
+微信公众号：砚初与猫
 更新了一下脚本，精简了需要的CK，多账户用换行(\n)或者@或者#隔开，尽量用换行隔开因为我没测试其他
 一天跑两次就够了，10点到13点之间运行一次猜涨跌做任务，16点半之后运行一次领猜涨跌奖励
 提现设置：默认提现5元，需要改的话自己设置TxStockCash变量，0代表不提现，1代表提现1元，5代表提现5元
@@ -12,15 +12,6 @@
 
 export TxStockCookie='openid&wzq_qlskey&wzq_qluin'
 
-V2P，圈X重写：
-小程序入口：公众号 腾讯自选股微信版->右下角好福利->福利中心
-[task_local]
-#腾讯自选股
-35 11,16 * * * https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstockV2.js, tag=腾讯自选股, enabled=true
-[rewrite_local]
-https://wzq.tenpay.com/cgi-bin/userinfo.fcgi url script-request-header https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstockV2.js
-[MITM]
-hostname = wzq.tenpay.com
 */
 const jsname = '腾讯自选股V2'
 const $ = new Env(jsname);
