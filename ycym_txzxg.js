@@ -13,8 +13,7 @@
 export TxStockCookie='openid&wzq_qlskey&wzq_qluin'
 
 */
-const jsname = '腾讯自选股V2'
-const $ = new Env(jsname);
+const $=new Env('\u781a\u521d\u4e0e\u732b\x2d\x54\x58\u81ea\u9009\u80a1');
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
 let notifyStr = ''
