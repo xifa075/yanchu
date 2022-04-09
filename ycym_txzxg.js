@@ -13,7 +13,7 @@
 export TxStockCookie='openid&wzq_qlskey&wzq_qluin'
 
 */
-const $=new Env('\u781a\u521d\u4e0e\u732b\x2d\x54\x58\u81ea\u9009\u80a1');
+const $ = new Env('砚初与猫-TX自选股');
 
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
 let notifyStr = ''
